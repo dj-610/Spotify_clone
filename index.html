@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Images/spotify.svg" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href=""> <img src="./Images/spotifylogo.svg" alt=""></a>
+            </div>
+            <div class="nav-icons">
+                <a href=""><img src="./Images/home.svg" alt=""></a>
+                <div class="search-wrapper">
+                    <div class="search-icon">
+                        <img src="./Images/search.svg" alt="">
+                    </div>
+                    <div class="search-input">
+                        <input type="text" placeholder="What do you want to hear?">
+                    </div>
+                    <p style="font-size: 25px; font-weight: lighter;">| </p>
+                    <div class="browse-icon">
+                        <img src="./Images/browse.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="nav-links">
+                <div class="left-navlinks">
+                    <ul>
+                        <li><a href="">Premimun</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Download</a></li>
+                    </ul>
+                </div>
+                <p>|</p>
+                <div class="right-navlinks">
+                    <ul>
+                        <li><a href=""><img src="./Images/" alt="">Install App</a></li>
+                        <li><a href="">Sign Up</a></li>
+                        <li class="Login" id="btnlogin"><a href="#">Log in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <a href=""></a>
+        <div class="left">
+            <div class="left-header">
+                <div class="library-navbar">
+                    <div class="library-logo">
+                        <img src="./Images/librarylogo.svg" alt="">
+                    </div>
+                    <div class="library-text">
+                        <h1>Your Library</h1>
+                        <img src="./Images/plus.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="left-content">
+                <ul id="songslist"></ul>
+                <div class="card" id="cards">
+                    <h2>Create Your first Playlist</h2>
+                    <p>It's easy, we'll help you</p>
+                    <button>Create playlist</button>
+                </div>
+                <div class="card">
+                    <h2>Lets find some podcasts to follow</h2>
+                    <p>We will keep you updated on new episodes</p>
+                    <button>Browse Podcasts</button>
+                </div>
+            </div>
+            <div class="left-footer">
+                <ul>
+                    <li><a href="">Legal</a></li>
+                    <li><a href="">Saftey&PrivacyCenter</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Cookies</a></li>
+                    <li><a href="">About Ads</a></li>
+                    <li><a href="">Accessibility</a></li>
+                    <span>
+                        <li><a href="">Cookies</a></li>
+                    </span>
+                </ul>
+                <button><i style="margin-right: 4px;" class="fa-solid fa-globe"></i>English</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="categories-row">
+                <div class="categories-header">
+                    <h1>Popular artist</h1>
+                    <a href="">Show all</a>
+                </div>
+                <div class="categories-card-container">
+                    <div class="artist-card">
+                        <div class="play">
+                            <img src="./Images/play.svg" alt="">
+                        </div>
+                        <div class="artist-card-image">
+                            <img src="./Images/artist_1.jpeg" alt="">
+                            <h2>Pritam</h2>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-card-image">
+                            <img src="./Images/artist_2.jpeg" alt="">
+                            <h2>Atif Aslam</h2>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-card-image">
+                            <img src="./Images/artist_3.jpeg" alt="">
+                            <h2>Karan Aujila</h2>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-card-image">
+                            <img src="./Images/artist_4.jpeg" alt="">
+                            <h2>Arijit Singh</h2>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-card-image">
+                            <img src="./Images/artist_5.jpeg" alt="">
+                            <h2>Diljit Dosan</h2>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categories-row">
+                <div class="categories-header">
+                    <h1>Popular albums and singles</h1>
+                    <a href="">Show all</a>
+                </div>
+                <div class="categories-card-container">
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/album_1.jpeg" alt="">
+                            <h2>My Terrible Mind</h2>
+                            <p>Talha Anjum,Umair</p>
+                        </div>
+                    </div>
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/album_2.jpeg" alt="">
+                            <h2>Sicario</h2>
+                            <p>Shubh</p>
+                        </div>
+                    </div>
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/album_3.jpeg" alt="">
+                            <h2>Safar</h2>
+                            <p>Bayaan</p>
+                        </div>
+                    </div>
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/album_4.jpeg" alt="">
+                            <h2>Glory</h2>
+                            <p>Yo Yo Honey Singh</p>
+                        </div>
+                    </div>
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/album_5.jpeg" alt="">
+                            <h2>Jhol</h2>
+                            <p>Maanu,Annural Khalid</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories-row">
+                <div class="categories-header">
+                    <h1>Popular radio</h1>
+                    <a href="">Show all</a>
+                </div>
+                <div class="categories-card-container">
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/radio_1.jpeg" alt="">
+                            <p>With Atif Aslam, Sachin-Jigar, Vishal</p>
+                        </div>
+                    </div>
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/radio_2.jpeg" alt="">
+                            <p>With Atif Aslam, Sachin-Jigar, Vishal</p>
+                        </div>
+                    </div>
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/radio_3.jpeg" alt="">
+                            <p>With Atif Aslam, Sachin-Jigar, Vishal</p>
+                        </div>
+                    </div>
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/radio_4.jpeg" alt="">
+                            <p>With Atif Aslam, Sachin-Jigar, Vishal</p>
+                        </div>
+                    </div>
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/radio_5.jpeg" alt="">
+                            <p>With Atif Aslam, Sachin-Jigar, Vishal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories-row">
+                <div class="categories-header">
+                    <h1>Featured charts</h1>
+                    <a href="">Show all</a>
+                </div>
+                <div class="categories-card-container">
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/features_1.jpg" alt="">
+                            <p>Your weekley update of the most played track</p>
+                        </div>
+                    </div>
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/features_2.jpg" alt="">
+                            <p>Your weekley update of the most played track</p>
+                        </div>
+                    </div>
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/features_3.jpg" alt="">
+                            <p>Your weekley update of the most played track</p>
+                        </div>
+                    </div>
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/features_4.jpg" alt="">
+                            <p>Your weekley update of the most played track</p>
+                        </div>
+                    </div>
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/features_5.jpg" alt="">
+                            <p>Your weekley update of the most played track</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories-row">
+                <div class="categories-header">
+                    <h1>Unwind and relax</h1>
+                    <a href="">Show all</a>
+                </div>
+                <div class="categories-card-container">
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/unwind_1.jpeg" alt="">
+                            <p>Your weekley update of the most played track</p>
+                        </div>
+                    </div>
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/unwind_2.jpeg" alt="">
+                            <p>Your weekley update of the most played track</p>
+                        </div>
+                    </div>
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/unwind_3.jpeg" alt="">
+                            <p>Your weekley update of the most played track</p>
+                        </div>
+                    </div>
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/unwind_4.jpeg" alt="">
+                            <p>Your weekley update of the most played track</p>
+                        </div>
+                    </div>
+                    <div class="categories-card">
+                        <div class="categories-card-image">
+                            <img src="./Images/unwind_5.jpeg" alt="">
+                            <p>Your weekley update of the most played track</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div class="footer-links">
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Jobs</a></li>
+                        <li><a href="">For the Record</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h2>Communities</h2>
+                    <ul>
+                        <li><a href="">For Artists</a></li>
+                        <li><a href="">Developers</a></li>
+                        <li><a href="">Advertising</a></li>
+                        <li><a href="">Investors</a></li>
+                        <li><a href="">Vendors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Free Mobile App</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h2>Spotify Plans</h2>
+                    <ul>
+                        <li><a href="">Premimun Individual</a></li>
+                        <li><a href="">Premimum Dua</a></li>
+                        <li><a href="">Premimum Family</a></li>
+                        <li><a href="">Premimum Student</a></li>
+                        <li><a href="">Spotify Free</a></li>
+                    </ul>
+                </div>
+                <div class="footer-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+
+                </div>
+            </div>
+            <p style="text-align: center;">
+                _______________________________________________________________________________________________________________________________________________
+            </p>
+            <p style="font-size: 14px; text-align: left; margin-left: 25px;">@2025 Spotify AB</p>
+        </div>
+    </main>
+    <div class="playbar" id="playbar">
+        <div>
+        <img src="./Images/skip-back-filled.svg" alt="">
+        <img  src="./Images/play_bar.svg" alt="">
+        <img src="./Images/skip-forward-filled.svg" alt=""></div>   
+        <div id="current-time">0:00
+            <input type="range" id="progress-bar" value="0" max="100"> 
+        </div>
+       
+    </div>
+    <footer id="mainfooter">
+        <div class="footer-text">
+            <h3>Preview of Spotify</h3>
+            <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+        </div>
+        <div class="footer-button">
+            <button>Sign up free</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
